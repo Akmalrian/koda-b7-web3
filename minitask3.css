@@ -1,0 +1,92 @@
+body{
+margin:0;
+font-family:Arial;
+}
+
+.container{
+display:grid;
+width:100px;
+
+grid-template-columns: 100px 100px 100px 100px 100px 100px 100px;
+}
+
+input{
+
+    margin: 20px;
+    padding: 20px;
+    width: 600px;
+    border-radius: 10px;
+    font-size: 40px;
+    justify-content: start;
+    right: 20px;
+}
+input::placeholder {
+  text-align: right; /* Menggeser ke kanan */
+}
+.item{
+min-width:95px;
+min-height:50px;
+display:grid;
+align-items:center;
+justify-content:center;
+border:1px solid black;
+font-size:20px;
+border-radius: 20px;
+margin: 10px;
+margin-right: 10px;
+border-color: rgb(149, 255, 255);
+background-color: aqua;
+}
+.angka .item{
+    background-color: rgb(196, 196, 196);
+    border-color: rgb(196, 196, 196);
+}
+.equal .item{
+    background-color: rgb(255, 0, 0);
+    border-color: rgb(255, 0, 0);
+    color: white;
+}
+.first{
+min-width:100px;
+min-height:50px;
+display:grid;
+align-items:center;
+justify-content:center;
+border:1px solid black;
+font-size:20px;
+border-top-left-radius:20px;
+border-bottom-left-radius: 20px;
+margin: 10px;
+margin-right: 10px;
+border-color: rgb(149, 255, 255);
+background-color: aqua;
+}
+.second{
+min-width:100px;
+min-height:50px;
+display:grid;
+align-items:center;
+justify-content:center;
+border:1px solid black;
+font-size:20px;
+border-top-right-radius:20px;
+border-bottom-right-radius: 20px;
+margin: 10px;
+margin-right: 10px;
+border-color: rgb(149, 255, 255);
+background-color: aqua;
+}
+/* .left{
+flex-grow:1;
+background:#f94144;
+}
+
+.center{
+flex-grow:2;
+background:#00a6ff;
+}
+
+.right{
+flex-grow:1;
+background:#caff0c;
+} */
