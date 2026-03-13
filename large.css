@@ -1,0 +1,25 @@
+.top{
+    border-width: 2px; 
+    border-radius: 20px;
+    border-color: rgb(48, 48, 48); 
+    background-color: greenyellow ;
+    display: inline-block; 
+    width: 100%;
+}
+
+header,
+.navigation{
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border-width: 2px; 
+    background-color: rgb(0, 204, 255) ; 
+    border-style: solid; 
+    padding: 10px;
+    height: 20px;
+    width: 100px;
+    font-size: 13px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    display: inline-block; 
+}
