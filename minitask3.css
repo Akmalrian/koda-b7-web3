@@ -1,92 +1,67 @@
-body{
-margin:0;
-font-family:Arial;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.container{
-display:grid;
-width:100px;
-
-grid-template-columns: 100px 100px 100px 100px 100px 100px 100px;
+body {
+    margin-left: 100px;
+  width: 700px;
+}
+.display {
+  margin: 40px 20px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  border: 1px solid rgb(194, 193, 193);
+  border-radius: 10px;
 }
 
-input{
-
-    margin: 20px;
-    padding: 20px;
-    width: 600px;
-    border-radius: 10px;
-    font-size: 40px;
-    justify-content: start;
-    right: 20px;
-}
-input::placeholder {
-  text-align: right; /* Menggeser ke kanan */
-}
-.item{
-min-width:95px;
-min-height:50px;
-display:grid;
-align-items:center;
-justify-content:center;
-border:1px solid black;
-font-size:20px;
-border-radius: 20px;
-margin: 10px;
-margin-right: 10px;
-border-color: rgb(149, 255, 255);
-background-color: aqua;
-}
-.angka .item{
-    background-color: rgb(196, 196, 196);
-    border-color: rgb(196, 196, 196);
-}
-.equal .item{
-    background-color: rgb(255, 0, 0);
-    border-color: rgb(255, 0, 0);
-    color: white;
-}
-.first{
-min-width:100px;
-min-height:50px;
-display:grid;
-align-items:center;
-justify-content:center;
-border:1px solid black;
-font-size:20px;
-border-top-left-radius:20px;
-border-bottom-left-radius: 20px;
-margin: 10px;
-margin-right: 10px;
-border-color: rgb(149, 255, 255);
-background-color: aqua;
-}
-.second{
-min-width:100px;
-min-height:50px;
-display:grid;
-align-items:center;
-justify-content:center;
-border:1px solid black;
-font-size:20px;
-border-top-right-radius:20px;
-border-bottom-right-radius: 20px;
-margin: 10px;
-margin-right: 10px;
-border-color: rgb(149, 255, 255);
-background-color: aqua;
-}
-/* .left{
-flex-grow:1;
-background:#f94144;
+.left-button{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
 
-.center{
-flex-grow:2;
-background:#00a6ff;
+.right-button{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+span{
+    color:blue;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.item {
+  grid-column: span 2;
+}
+.number{
+    background-color: rgb(225, 225, 225);
+}
+.equal{
+    background-color: rgb(56, 86, 255);
 }
 
-.right{
-flex-grow:1;
-background:#caff0c;
-} */
+button {
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  background-color: rgb(134, 223, 255);
+}
+
+
+@media screen and (max-width: 768px){
+    .buttons{
+        grid-template-columns: 1fr;
+    }
+    .left-button{
+        grid-row: 2 ;
+    }
+    body {
+  width: 400px;
+}
+}
